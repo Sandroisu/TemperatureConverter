@@ -9,10 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func tempEntry(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-
+    @IBAction func covertClicked(_ sender: Any) {
+    }
+    
+    
 }
 

@@ -28,14 +28,20 @@
                                 <state key="normal" title="Convert to F">
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="covertClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dP7-BS-HVq"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jb9-qz-HRI">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Celcius" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jb9-qz-HRI">
                                 <rect key="frame" x="116.66666666666669" y="289" width="160" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="qv1-bh-OJY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="tempEntry:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Z0h-Mg-xSp"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,6 +57,9 @@
                             <constraint firstItem="Sz5-J7-AIw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="raC-eC-xzN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="E4m-jn-BXB" id="ITa-l6-9rs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
