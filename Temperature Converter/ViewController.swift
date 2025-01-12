@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func tempEntry(_ sender: Any) {
-    }
+    
+    @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -18,9 +18,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func covertClicked(_ sender: Any) {
+    @IBAction func convertClicked(_ sender: Any) {
+        if let result = textField.text {
+            if (result == ""){
+                return
+            } else {
+                if let num = Double(result) {
+                    let converted = num * 9/5 + 32
+                    resultLabel.text = String(converted)
+                }
+            }
+        }
     }
-    
-    
 }
 

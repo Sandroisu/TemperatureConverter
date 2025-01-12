@@ -29,7 +29,7 @@
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="covertClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dP7-BS-HVq"/>
+                                    <action selector="convertClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1H-L9-c1o"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Celcius" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jb9-qz-HRI">
@@ -39,9 +39,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="tempEntry:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Z0h-Mg-xSp"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="E4m-jn-BXB" id="ITa-l6-9rs"/>
+                        <outlet property="textField" destination="jb9-qz-HRI" id="3tA-1V-MsG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
