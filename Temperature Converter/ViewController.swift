@@ -30,11 +30,15 @@ class ViewController: UIViewController {
                 if let num = Double(result) {
                     let converted = num * 9/5 + 32
                     resultLabel.text = String(converted)
-                    counter += 1
-                    counterLabel.text = String(counter) + " conversions"
+                    updateCount()
                 }
             }
         }
+    }
+    
+    private func updateCountByOne(){
+        counter += 1
+        counterLabel.text = String(counter) + " conversions"
     }
 }
 
